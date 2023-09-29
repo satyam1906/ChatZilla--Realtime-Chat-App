@@ -1,5 +1,5 @@
 .chatPage {
-  background-color: rgb(31, 29, 29);
+  background-color: rgb(5, 5, 5);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -15,15 +15,31 @@
 .header {
   background-color: crimson;
   height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  .header > h2 {
+    font-size: 1.5vmax;
+    color: white;
+    margin: 2.5vmax;
+  }
+.header img {
+  margin: 2.5vmax;
+  transition: all 0.2s;
+}
+.header > img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .chatBox {
-  border: 0.2vmax solid black;
+  /* border: 0.2vmax solid black; */
   height: 70%;
   box-sizing: border-box;
   overflow-y: auto;
 }
 .inputBox {
-  /* border: 0.2vmax solid black; */
+  border: 0.2vmax solid rgb(134, 126, 126);
   height: 15%;
   box-sizing: border-box;
   display: flex;
@@ -36,6 +52,7 @@
   outline: none;
   background-color: white;
   font-size: 1.2vmax;
+  border: 0.1vmax solid black;
 }
 .sendBtn {
   background-color: crimson;
@@ -48,17 +65,16 @@
   cursor: pointer;
 }
 
-.sendBtn>img{
-    width: 2.5vmax;
-    filter: brightness(100) invert();
-    transition: all 0.2s;
-
+.sendBtn > img {
+  width: 2.5vmax;
+  filter: brightness(100) invert();
+  transition: all 0.2s;
 }
 
 .sendBtn:hover {
   background-color: rgb(160, 16, 45);
 }
 
-.sendBtn:hover img{
-    transform: translateX(10px);
+.sendBtn:hover img {
+  transform: translateX(10px);
 }
