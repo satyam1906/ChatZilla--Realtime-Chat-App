@@ -2,10 +2,10 @@ const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const socketIO = require('socket.io');
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 const port= process.env.PORT ||4500
 
-dotenv.config({ path: './config/config.env' });
+// dotenv.config({ path: './config/config.env' });
 
 const app = express();
 const users = [{}];
