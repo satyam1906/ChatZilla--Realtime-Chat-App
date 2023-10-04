@@ -38,6 +38,6 @@ io.on('connection', (socket) => {
   })
 });
 
-server.listen(process.env.PORT, () => {
-  console.log(`Server is working on http://localhost:${process.env.PORT}`);
+server.listen(port, () => {
+  console.log(`Server is working on http://localhost:${port}`);
 });
